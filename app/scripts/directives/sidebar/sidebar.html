@@ -13,7 +13,7 @@
                     <!-- /input-group -->
                 </li>
                 <li ng-class="{active: selectedMenu=='dashboard'}">
-                    <a href="#/dashboard"  ng-click="selectedMenu='dashboard'"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    <a href="#/dashboard"  ng-click="selectedMenu='dashboard'"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> 
                 </li> 
                 <li ng-init="collapse=true" ng-class="{active: !collapse};">
 
@@ -28,14 +28,14 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-                <li ng-class="{active: tables}">
+                <li ng-class="{active:selectedMenu=='tables'}">
                     <a href="#/chart" ng-click="selectedMenu='tables'"><i class="fa fa-table fa-fw"></i> Tables</a>
                 </li>
-                <li ng-class="{active: Forms}">
+                <li ng-class="{active: selectedMenu=='Forms'}">
                     <a href="forms.html" ng-click="selectedMenu='forms'"><i class="fa fa-edit fa-fw"></i> Forms</a>
                 </li>
                 <li ng-init="drop = !drop" ng-class = "{active:!drop}">
-                    <a href="#" ng-click="drop=!drop;selectedMenu='UI Elements'"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                    <a href="#" ng-click="drop=!drop"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                     <ul class="nav nav-second-level" collapse ="drop">
                         <li>
                             <a href="panels-wells.html">Panels and Wells</a>
@@ -58,18 +58,18 @@
                     </ul>
                     <!-- /.nav-second-level -->
                 </li>
-                <li>
-                    <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                    <ul class="nav nav-second-level collapse">
+                <li ng-init="multi = !multi" ng-class="{active:!multi}">
+                    <a href="#" ng-click="multi=!multi"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level" collapse = "mutli">
                         <li>
                             <a href="#">Second Level Item</a>
                         </li>
                         <li>
                             <a href="#">Second Level Item</a>
                         </li>
-                        <li>
-                            <a href="#">Third Level <span class="fa arrow"></span></a>
-                            <ul class="nav nav-third-level collapse">
+                        <li ng-init="third=!third" ng-class="{active:!third}">
+                            <a href="#" ng-click="third=!third">Third Level <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level" collapse="third">
                                 <li>
                                     <a href="#">Third Level Item</a>
                                 </li>
