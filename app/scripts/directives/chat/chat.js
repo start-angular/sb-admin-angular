@@ -7,9 +7,9 @@
  * # adminPosHeader
  */
 angular.module('sbAdminApp')
-	.directive('header',function(){
+	.directive('chat',function(){
 		return {
-        templateUrl:'scripts/directives/header/header.html',
+        templateUrl:'scripts/directives/chat/chat.html',
         restrict: 'E',
         replace: true,
     	}
