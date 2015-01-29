@@ -10,7 +10,7 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 - cd `project-directory`
 - `npm install`
 - `bower install`
-- `grunt serve --foce`
+- `grunt serve --force`
 
 ## Roadmap
 - Add Lazy Loading using Webpack or RequireJS
