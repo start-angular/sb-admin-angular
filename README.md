@@ -5,7 +5,7 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 
 ## Installation
 1. Clone this project or Download that ZIP file
-2. Make sure you have [bower](http://bower.io/) and  [npm](https://www.npmjs.org/) installed globally
+2. Make sure you have [bower](http://bower.io/), [grunt-cli](https://www.npmjs.com/package/grunt-cli) and  [npm](https://www.npmjs.org/) installed globally
 3. On the command prompt run the following commands
 - cd `project-directory`
 - `npm install`
