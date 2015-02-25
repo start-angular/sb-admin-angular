@@ -1,107 +1,69 @@
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Flot</h1>
-                </div>
-                <!-- /.col-lg-12 -->
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Charts</h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-lg-6 col-sm-12" id="line-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Line Chart</div>
+            <div class="panel-body">
+                <canvas id="line" class="chart chart-line chart-xl" data="line.data" labels="line.labels" legend="true"
+                click="line.onClick" series="line.series"></canvas>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="1497" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1497px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 24px; text-align: center;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 146px; text-align: center;">1</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 268px; text-align: center;">2</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 390px; text-align: center;">3</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 511px; text-align: center;">4</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 633px; text-align: center;">5</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 755px; text-align: center;">6</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 877px; text-align: center;">7</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 999px; text-align: center;">8</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 1121px; text-align: center;">9</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 1239px; text-align: center;">10</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 115px; top: 381px; left: 1361px; text-align: center;">11</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 337px; left: 2px; text-align: right;">-1.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 260px; left: 2px; text-align: right;">-0.5</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 184px; left: 6px; text-align: right;">0.0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 108px; left: 6px; text-align: right;">0.5</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 31px; left: 6px; text-align: right;">1.0</div></div></div><canvas class="flot-overlay" width="1497" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 1497px; height: 400px;"></canvas><div class="legend"><div style="position: absolute; width: 46px; height: 34px; top: 14px; right: 13px; opacity: 0.85; background-color: rgb(255, 255, 255);"> </div><table style="position:absolute;top:14px;right:13px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">sin(x)</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">cos(x)</td></tr></tbody></table></div></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-12 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Pie Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-pie-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><canvas class="flot-overlay" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><div class="legend"><div style="position: absolute; width: 57px; height: 68px; top: 5px; right: 5px; opacity: 0.85; background-color: rgb(255, 255, 255);"> </div><table style="position:absolute;top:5px;right:5px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Series 0</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">Series 1</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(203,75,75);overflow:hidden"></div></div></td><td class="legendLabel">Series 2</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(77,167,77);overflow:hidden"></div></div></td><td class="legendLabel">Series 3</td></tr></tbody></table></div></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Multiple Axes Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart-multi" style="padding: 0px; position: relative;"><canvas class="flot-base" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 2px; text-align: center;">Jan 2007</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 96px; text-align: center;">Apr 2007</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 193px; text-align: center;">Jul 2007</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 288px; text-align: center;">Oct 2007</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 383px; text-align: center;">Jan 2008</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 479px; text-align: center;">Apr 2008</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 79px; top: 381px; left: 575px; text-align: center;">Jul 2008</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 368px; left: 15px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 306px; left: 8px; text-align: right;">25</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 245px; left: 8px; text-align: right;">50</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 184px; left: 8px; text-align: right;">75</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 123px; left: 2px; text-align: right;">100</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 62px; left: 2px; text-align: right;">125</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 2px; text-align: right;">150</div></div><div class="flot-y-axis flot-y2-axis yAxis y2Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 368px; left: 680px;">0.600€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 306px; left: 680px;">0.633€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 245px; left: 680px;">0.667€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 184px; left: 680px;">0.700€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 123px; left: 680px;">0.733€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 62px; left: 680px;">0.767€</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 680px;">0.800€</div></div></div><canvas class="flot-overlay" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><div class="legend"><div style="position: absolute; width: 144px; height: 34px; bottom: 29px; left: 31px; opacity: 0.85; background-color: rgb(255, 255, 255);"> </div><table style="position:absolute;bottom:29px;left:31px;;font-size:smaller;color:#545454"><tbody><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(237,194,64);overflow:hidden"></div></div></td><td class="legendLabel">Oil price ($)</td></tr><tr><td class="legendColorBox"><div style="border:1px solid #ccc;padding:1px"><div style="width:4px;height:0;border:5px solid rgb(175,216,248);overflow:hidden"></div></div></td><td class="legendLabel">USD/EUR exchange rate</td></tr></tbody></table></div></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Moving Line Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-line-chart-moving" style="padding: 0px; position: relative;"><canvas class="flot-base" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 361px; left: 34px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 297px; left: 27px; text-align: right;">20</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 234px; left: 27px; text-align: right;">40</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 170px; left: 27px; text-align: right;">60</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 107px; left: 27px; text-align: right;">80</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 43px; left: 21px; text-align: right;">100</div></div></div><canvas class="flot-overlay" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bar Chart Example
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="flot-chart">
-                                <div class="flot-chart-content" id="flot-bar-chart" style="padding: 0px; position: relative;"><canvas class="flot-base" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas><div class="flot-text" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; font-size: smaller; color: rgb(84, 84, 84);"><div class="flot-x-axis flot-x1-axis xAxis x1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 107px; text-align: center;">12/05</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 213px; text-align: center;">12/07</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 318px; text-align: center;">12/09</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 424px; text-align: center;">12/11</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 530px; text-align: center;">12/13</div><div class="flot-tick-label tickLabel" style="position: absolute; max-width: 89px; top: 381px; left: 636px; text-align: center;">12/15</div></div><div class="flot-y-axis flot-y1-axis yAxis y1Axis" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; display: block;"><div class="flot-tick-label tickLabel" style="position: absolute; top: 368px; left: 22px; text-align: right;">0</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 315px; left: 2px; text-align: right;">1000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 263px; left: 2px; text-align: right;">2000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 210px; left: 2px; text-align: right;">3000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 158px; left: 2px; text-align: right;">4000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 105px; left: 2px; text-align: right;">5000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 53px; left: 2px; text-align: right;">6000</div><div class="flot-tick-label tickLabel" style="position: absolute; top: 1px; left: 2px; text-align: right;">7000</div></div></div><canvas class="flot-overlay" width="718" height="400" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 718px; height: 400px;"></canvas></div>
-                            </div>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Flot Charts Usage
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <p>Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website, <a target="_blank" href="http://www.flotcharts.org/">http://www.flotcharts.org/</a>.</p>
-                            <a target="_blank" class="btn btn-default btn-lg btn-block" href="http://www.flotcharts.org/">View Flot Charts Documentation</a>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
         </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="bar-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Bar Chart</div>
+            <div class="panel-body">
+                <canvas id="bar" class="chart chart-bar" data="bar.data" labels="bar.labels" series="bar.series"
+                options="bar.options"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-sm-12" id="doughnut-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Doughnut Chart</div>
+            <div class="panel-body">
+            <canvas id="doughnut" class="chart chart-doughnut chart-xs" data="donut.data" labels="donut.labels" legend="false"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="radar-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Radar Chart</div>
+            <div class="panel-body">
+                <canvas id="area" class="chart chart-radar" data="radar.data" labels="radar.labels" click="onClick"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="pie-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Pie Chart</div>
+            <div class="panel-body">
+                <canvas id="pie" class="chart chart-pie chart-xs" data="pie.data" labels="pie.labels"></canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="polar area-chart" ng-controller="ChartCtrl">
+      <div class="panel panel-default">
+        <div class="panel-heading">Polar Area Chart</div>
+        <div class="panel-body">
+          <canvas id="polar" class="chart chart-polar-area" data="polar.data" labels="polar.labels"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-12" id="base-chart" ng-controller="ChartCtrl">
+        <div class="panel panel-default">
+            <div class="panel-heading">Dynamic Chart</div>
+            <div class="panel-body">
+            <canvas id="base" class="chart chart-base" chart-type="dynamic.type" data="dynamic.data" labels="dynamic.labels" legend="true"></canvas>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary pull-right" ng-click="dynamic.toggle()">Toggle</button>
+    </div>
+</div>

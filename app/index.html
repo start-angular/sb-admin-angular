@@ -8,96 +8,41 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    
-    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Timeline CSS -->
-    <link href="styles/timeline.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="styles/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Morris Charts CSS -->
-    <!-- <link href="styles/morrisjs/morris.css" rel="stylesheet"> -->
-
-    <!-- Custom Fonts -->
-    <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <!-- endbower -->
     <!-- endbuild -->
+    
     <!-- build:css(.tmp) styles/main.css -->
-    <!-- <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sb-admin-2.css">
+    <link rel="stylesheet" href="styles/timeline.css">
+    <link rel="stylesheet" href="bower_components/metisMenu/dist/metisMenu.min.css">
+    <link rel="stylesheet" href="bower_components/angular-loading-bar/build/loading-bar.min.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css" type="text/css">
     <!-- endbuild -->
-  </head>
-  <body ng-app="sbAdminApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-
-    <!--[if lt IE 9]>
-    <script src="bower_components/es5-shim/es5-shim.js"></script>
-    <script src="bower_components/json3/lib/json3.min.js"></script>
-    <![endif]-->
-
+    
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/json3/lib/json3.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    <script src="bower_components/angular-animate/angular-animate.js"></script>
-    <script src="bower_components/angular-touch/angular-touch.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
-    <!-- endbower -->
-    
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/json3/lib/json3.min.js"></script>
+    <script src="bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+    <script src="bower_components/angular-loading-bar/build/loading-bar.min.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-
+    <script src="bower_components/metisMenu/dist/metisMenu.min.js"></script>
+    <!-- endbower -->
     <!-- endbuild -->
-
+    
     <!-- build:js({.tmp,app}) scripts/scripts.js -->
-    <script src="scripts/app.js"></script>
-    <script src="scripts/controllers/main.js"></script>
-    <script src="scripts/controllers/form.js"></script>
-    <script src="scripts/controllers/about.js"></script>
-    <script src="scripts/directives/header/header.js"></script>
-    <script src="scripts/directives/sidebar/sidebar.js"></script>
-    <script src="scripts/directives/chat/chat.js"></script>
-    <script src="scripts/directives/dashboard/stats/stats.js"></script>
-    <script src="scripts/directives/header-notification/header-notification.js"></script>
-    <script src="scripts/directives/notifications/notifications.js"></script>
-    <script src="scripts/directives/sidebar/sidebar-search/sidebar-search.js"></script>
-    <script src="scripts/directives/timeline/timeline.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="js/sb-admin-2.js"></script>
     <!-- endbuild -->
 
 
-    <!-- jQuery -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
 
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="/bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/sb-admin-2.js"></script> 
-
-
-
-     <script>
+    <script>
        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -105,32 +50,24 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+    <!-- Custom CSS -->
+
+    <!-- Custom Fonts -->
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="styles/morrisjs/morris.css" rel="stylesheet"> -->
 
 
+    </head>
+   
+    <body>
 
+    <div ng-app="sbAdminApp">
 
-    <!-- Add your site or application content here -->
-    <div id="wrapper">
-
-            <!-- Navigation -->
-            
-                 <header></header>
-                 <!-- /.navbar-top-links -->
-                 <sidebar></sidebar>
-               
-             <!-- /.navbar-static-side -->
-            
-
-            <div id="page-wrapper" style="min-height: 561px;">
-
-                <div ng-view></div>
-                
-            </div>
-            <!-- /#page-wrapper -->
+        <div ui-view></div>
 
     </div>
 
+    </body>
 
-
-</body>
 </html>

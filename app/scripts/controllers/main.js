@@ -1,5 +1,4 @@
 'use strict';
-
 /**
  * @ngdoc function
  * @name sbAdminApp.controller:MainCtrl
@@ -9,5 +8,4 @@
  */
 angular.module('sbAdminApp')
   .controller('MainCtrl', function($scope) {
-    
   });

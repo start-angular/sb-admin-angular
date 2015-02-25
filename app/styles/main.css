@@ -77,3 +77,8 @@ body {
     border-bottom: 0;
   }
 }
+
+.nav>li.active>a {
+text-decoration: none;
+background-color: #eee;
+}
