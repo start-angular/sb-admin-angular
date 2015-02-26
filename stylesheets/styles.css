@@ -1008,3 +1008,6 @@ footer {
     width: auto;
   }
 }
+.mono{
+  font-family:'courier new', monospace;
+}

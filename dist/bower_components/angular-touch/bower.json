@@ -1,0 +1,8 @@
+{
+  "name": "angular-touch",
+  "version": "1.2.16",
+  "main": "./angular-touch.js",
+  "dependencies": {
+    "angular": "1.2.16"
+  }
+}
