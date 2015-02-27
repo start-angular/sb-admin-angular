@@ -16,7 +16,7 @@
             <li ng-class="{active: currentUrl()=='/dashboard/forms'}">
                 <a ui-sref="dashboard.form"><i class="fa fa-edit fa-fw"></i> Forms</a>
             </li>
-            <li ng-init="drop = !drop" ng-class="{active: collapseVar==1}">{{dropDown}}
+            <li ng-class="{active: collapseVar==1}">{{dropDown}}
                 <a ng-click="check(1)"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level" collapse ="collapseVar!=1">
                     <li ng-class="{active: currentUrl()=='/dashboard/panels-wells'}">
@@ -40,7 +40,7 @@
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
-            <li ng-init="multi = !multi" ng-class="{active: collapseVar==2}">
+            <li ng-class="{active: collapseVar==2}">
                 <a ng-click="check(2)"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level" collapse = "collapseVar!=2">
                     <li>
@@ -64,13 +64,14 @@
                             <li>
                                 <a href="">Third Level Item</a>
                             </li>
+                            
                         </ul>
                         <!-- /.nav-third-level -->
                     </li>
                 </ul>
                 <!-- /.nav-second-level -->
             </li>
-            <li ng-init="pages=!pages" ng-class="{active:collapseVar==4}">
+            <li ng-class="{active:collapseVar==4}">
             <a ng-click="check(4)"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level"collapse="collapseVar!=4">
                 <li ng-class="{active: selectedMenu=='blank'}">
@@ -81,7 +82,7 @@
                 </li>
             </ul>
             <!-- /.nav-second-level -->
-        </li>
+            </li>
         </ul>
     </div>
     <!-- /.sidebar-collapse -->

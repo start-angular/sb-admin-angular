@@ -12,6 +12,7 @@ angular
     'oc.lazyLoad',
     'ui.router',
     'ui.bootstrap',
+    'angular-loading-bar',
   ])
   .config(['$stateProvider','$urlRouterProvider','$ocLazyLoadProvider',function ($stateProvider,$urlRouterProvider,$ocLazyLoadProvider) {
     
@@ -69,11 +70,6 @@ angular
                 {
                   name:'ngTouch',
                   files:['bower_components/angular-touch/angular-touch.js']
-                })
-                $ocLazyLoad.load(
-                {
-                  name:'angular-loading-bar',
-                  files:['bower_components/angular-loading-bar/src/loading-bar.js']
                 })
             }
         }

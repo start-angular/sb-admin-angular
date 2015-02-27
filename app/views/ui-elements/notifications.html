@@ -110,24 +110,26 @@
                         <div class="panel-body">
                             <h4>Tooltip Demo</h4>
                             <div class="tooltip-demo">
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-                                <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                                <button type="button" tooltip="Tooltip on left" tooltip-placement="left" class="btn btn-default" title="Tooltip on left">Tooltip on left</button>
+                                <button type="button" tooltip="Tooltip on top" tooltip-placement="top" class="btn btn-default" title="Tooltip on top">Tooltip on top</button>
+                                <button type="button" tooltip="Tooltip on bottom" tooltip-placement="bottom" class="btn btn-default" title="Tooltip on bottom">Tooltip on bottom</button>
+                                <button type="button" tooltip="Tooltip on right" tooltip-placement="right" class="btn btn-default" title="Tooltip on right">Tooltip on right</button>
+
                             </div>
+                            <br>
                             <br>
                             <h4>Clickable Popover Demo</h4>
                             <div class="tooltip-demo">
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <button type="button" class="btn btn-default" popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popover-placement="left" popover-trigger="click">
                                     Popover on left
                                 </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <button type="button" class="btn btn-default" popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popover-placement="top" popover-trigger="click">
                                     Popover on top
                                 </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <button type="button" class="btn btn-default" popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popover-placement="bottom" popover-trigger="click">
                                     Popover on bottom
                                 </button>
-                                <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                <button type="button" class="btn btn-default" popover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popover-placement="right" popover-trigger="click">
                                     Popover on right
                                 </button>
                             </div>
