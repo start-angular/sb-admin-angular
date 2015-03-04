@@ -17,7 +17,7 @@
                 <a ui-sref="dashboard.form"><i class="fa fa-edit fa-fw"></i> Forms</a>
             </li>
             <li ng-class="{active: collapseVar==1}">{{dropDown}}
-                <a ng-click="check(1)"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
+                <a href="" ng-click="check(1)"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level" collapse ="collapseVar!=1">
                     <li ng-class="{active: currentUrl()=='/dashboard/panels-wells'}">
                         <a ui-sref="dashboard.panels-wells">Panels and Wells</a>
@@ -41,7 +41,7 @@
                 <!-- /.nav-second-level -->
             </li>
             <li ng-class="{active: collapseVar==2}">
-                <a ng-click="check(2)"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                <a href="" ng-click="check(2)"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level" collapse = "collapseVar!=2">
                     <li>
                         <a href="">Second Level Item</a>
@@ -72,7 +72,7 @@
                 <!-- /.nav-second-level -->
             </li>
             <li ng-class="{active:collapseVar==4}">
-            <a ng-click="check(4)"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
+            <a href="" ng-click="check(4)"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
             <ul class="nav nav-second-level"collapse="collapseVar!=4">
                 <li ng-class="{active: selectedMenu=='blank'}">
                     <a ui-sref="dashboard.blank" ng-click="selectedMenu='blank'">Blank Page</a>
