@@ -10,7 +10,7 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 - cd `project-directory`
 - `npm install`
 - `bower install`
-- `grunt serve --force`
+- `grunt serve`
 - `grunt serve:dist` - to minify the files for deployment
 
 ## Roadmap
