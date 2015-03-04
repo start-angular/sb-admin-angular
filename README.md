@@ -11,9 +11,10 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 - `npm install`
 - `bower install`
 - `grunt serve --force`
+- `grunt serve:dist` - to minify the files for deployment
 
 ## Roadmap
-- Add Lazy Loading using Webpack or RequireJS
+
 - Add sample AJAX calls and make the directives more modular
 
 ### Automation tools
