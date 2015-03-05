@@ -15,7 +15,7 @@ angular.module('sbAdminApp')
       replace: true,
       scope: {
       },
-      controller:function($scope,$location){
+      controller:function($scope){
         $scope.selectedMenu = 'dashboard';
         $scope.collapseVar = 0;
         $scope.multiCollapseVar = 0;
@@ -34,13 +34,7 @@ angular.module('sbAdminApp')
             $scope.multiCollapseVar = 0;
           else
             $scope.multiCollapseVar = y;
-        }
-
-        $scope.currentUrl = function(){
-            return $location.path();
-            console.log($location.path());
-        }
-
+        };
       }
     }
   }]);
