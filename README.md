@@ -1,4 +1,6 @@
 ## SB Admin v2.0 rewritten in AngularJS
+
+[![Join the chat at https://gitter.im/start-angular/sb-admin-angular](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-angular/sb-admin-angular?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](http://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme.
 
 Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.com/).
