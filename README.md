@@ -11,10 +11,9 @@ Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.
 2. Make sure you have [bower](http://bower.io/), [grunt-cli](https://www.npmjs.com/package/grunt-cli) and  [npm](https://www.npmjs.org/) installed globally
 3. On the command prompt run the following commands
 - cd `project-directory`
-- `npm install`
-- `bower install`
-- `grunt serve`
-- `grunt serve:dist` - to minify the files for deployment
+- `npm install` - bower install is ran from the postinstall
+- `npm start` - a shortcut for `grunt serve`
+- `npm run dist` - a shortcut for `grunt serve:dist` to minify the files for deployment
 
 ## Roadmap
 
