@@ -1,6 +1,10 @@
 {
   "name": "sbadmin",
   "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/start-angular/sb-admin-angular"
+  },
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.1",
@@ -36,6 +40,9 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "grunt serve",
+    "dist": "grunt serve:dist",
+    "postinstall": "bower install"
   }
 }
