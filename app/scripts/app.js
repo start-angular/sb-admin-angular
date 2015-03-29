@@ -26,7 +26,7 @@ angular
     $stateProvider
       .state('dashboard', {
         url:'/dashboard',
-        templateUrl: '/views/dashboard/main.html',
+        templateUrl: 'views/dashboard/main.html',
         resolve: {
             loadMyDirectives:function($ocLazyLoad){
                 return $ocLazyLoad.load(
@@ -77,7 +77,7 @@ angular
       .state('dashboard.home',{
         url:'/home',
         controller: 'MainCtrl',
-        templateUrl:'/views/dashboard/home.html',
+        templateUrl:'views/dashboard/home.html',
         resolve: {
           loadMyFiles:function($ocLazyLoad) {
             return $ocLazyLoad.load({
@@ -94,15 +94,15 @@ angular
         }
       })
       .state('dashboard.form',{
-        templateUrl:'/views/form.html',
+        templateUrl:'views/form.html',
         url:'/form'
     })
       .state('dashboard.blank',{
-        templateUrl:'/views/pages/blank.html',
+        templateUrl:'views/pages/blank.html',
         url:'/blank'
     })
       .state('login',{
-        templateUrl:'/views/pages/login.html',
+        templateUrl:'views/pages/login.html',
         url:'/login'
     })
       .state('dashboard.chart',{
