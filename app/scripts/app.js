@@ -59,7 +59,7 @@ angular
                 $ocLazyLoad.load(
                 {
                   name:'ngResource',
-                  files:['bower_components/angular-animate/angular-animate.js']
+                  files:['bower_components/angular-resource/angular-resource.js']
                 })
                 $ocLazyLoad.load(
                 {
