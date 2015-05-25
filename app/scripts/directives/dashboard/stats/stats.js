@@ -19,7 +19,8 @@ angular.module('sbAdminApp')
         'name': '@',
         'colour': '@',
         'details':'@',
-        'type':'@'
+        'type':'@',
+        'goto':'@'
   		}
   		
   	}
