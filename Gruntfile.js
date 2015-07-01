@@ -161,7 +161,7 @@ module.exports = function (grunt) {
     },
 
     // Automatically inject Bower components into the app
-    wiredep: {
+/*    wiredep: {
       options: {
         cwd: '<%= yeoman.app %>'
       },
@@ -170,7 +170,7 @@ module.exports = function (grunt) {
         ignorePath:  /\.\.\//
       }
     },
-
+*/
     // Renames files for browser caching purposes
     filerev: {
       dist: {
