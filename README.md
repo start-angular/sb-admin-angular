@@ -6,6 +6,8 @@ This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](
 
 Find out more [Free Angular Themes at StartAngular.com](http://www.startangular.com/).
 
+### Note: This project is no longer maintained. 
+
 ## Installation
 ####1. Clone this project or Download that ZIP file
 
